@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:timeline="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.alorma.timeline.RoundTimelineView
+        android:id="@+id/imageview"
+        android:layout_width="?android:listPreferredItemHeight"
+        android:layout_height="?android:listPreferredItemHeight"
+        timeline:timeline_lineStyle="linear"
+        timeline:timeline_indicatorColor="#c6cac6"
+                timeline:timeline_internalColor="@color/white"
+        timeline:timeline_lineWidth="5dp"
+        timeline:timeline_lineColor="#8c3232"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:listPreferredItemHeight"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0d0d0d"
+        timeline:layout_constraintEnd_toEndOf="parent"
+        timeline:layout_constraintHorizontal_bias="0.0"
+        timeline:layout_constraintStart_toEndOf="@+id/imageview"
+        timeline:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
+
+</android.support.constraint.ConstraintLayout>

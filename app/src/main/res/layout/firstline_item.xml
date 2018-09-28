@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:timeline="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.alorma.timeline.RoundTimelineView
+        android:id="@+id/imageview"
+        android:layout_width="?android:listPreferredItemHeight"
+        android:layout_height="?android:listPreferredItemHeight"
+        timeline:timeline_lineStyle="linear"
+        timeline:timeline_indicatorColor="#fcf403"
+        timeline:timeline_lineWidth="5dp"
+        timeline:timeline_lineColor="#f50808"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="322dp"
+        android:layout_height="?android:listPreferredItemHeight"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="#3b3939"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        timeline:layout_constraintEnd_toEndOf="parent"
+        timeline:layout_constraintStart_toEndOf="@+id/imageview"
+        timeline:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
+</android.support.constraint.ConstraintLayout>
